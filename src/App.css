@@ -1,38 +1,770 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap");
+
+/* main body */
+
 .App {
-  text-align: center;
+  width: 1000px;
+  height: auto;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  /* border: 1px solid gray; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  font-family: "Nanum Gothic", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Header */
+.Header {
+  width: 90%;
+  height: 100px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+
+  /* border-bottom: 1px solid #acacac; */
+}
+
+.Header .logo-box {
+  width: 15%;
+  height: 100%;
+}
+
+.Header .logo-box img {
+  height: 100%;
+
+  border-radius: 10px;
+}
+
+.Header .title-box {
+  width: 50%;
+  height: 100%;
+
+  font-size: 40px;
+  text-align: center;
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.Header .user-box {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/* Button */
+.Button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 20px 10px 20px;
+
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.Button_default {
+  background-color: #ececec;
+  color: black;
+}
+
+.Button_positive {
+  background-color: #64c964;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Button_nagetive {
+  background-color: #fd565f;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Logo */
+
+.Logo .title-box {
+  width: 100%;
+
+  padding-top: 50px;
+
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Logo img {
+  width: 50%;
+
+  margin-left: 25%;
+  border-radius: 50%;
+}
+
+/* Register */
+
+.Register {
+  width: 40%;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Register .input-box {
+  width: 100%;
+
+  padding: 30px;
+}
+
+.Register .input-box div {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Register .input-box div p {
+  font-size: 15px;
+}
+
+.Register .input-box div input {
+  width: 70%;
+  height: 200%;
+
+  font-size: 15px;
+
+  padding: 5px;
+
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.Register .button-box {
+  width: 100%;
+
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Login */
+.Login {
+  width: 40%;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Login .input-box {
+  width: 100%;
+
+  padding: 30px;
+}
+
+.Login .input-box div {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Login .input-box div p {
+  font-size: 20px;
+}
+
+.Login .input-box div input {
+  width: 70%;
+  height: 200%;
+
+  font-size: 25px;
+}
+
+.Login .button-box {
+  width: 100%;
+
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ItemList */
+
+.ItemList {
+  width: 90%;
+  height: 350px;
+
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.ItemList .title-box {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ItemList .title-box h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ItemList .title-box p {
+  font-size: 15px;
+}
+
+.ItemList .list-box {
+  width: 100%;
+  height: 300px;
+
+  padding-top: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #acacac;
+}
+
+.ItemList .list-box .trip-box {
+  width: 25%;
+  height: 250px;
+
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* border: 1px solid gray; */
+  border-radius: 5px;
+  background-color: #ececec;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  cursor: pointer;
+}
+
+.ItemList .list-box .trip-box .trip-title {
+  width: 100%;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ItemList .list-box .trip-box .trip-user {
+  text-align: end;
+  color: #a0a0a0;
+}
+
+.ItemList .list-box .trip-box .trip-content {
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.ItemList .list-box .trip-box .trip-date {
+  font-size: 10px;
+  color: #a0a0a0;
+
+  text-align: end;
+}
+
+/* Trip */
+.Trip .menu-box {
+  width: 90%;
+  height: 70px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Trip .menu-box .ControlMenu {
+  margin-right: 10px;
+  padding: 10px 20px 10px 20px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.Trip .list-box {
+  width: 90%;
+  padding-left: 50px;
+}
+
+.TripItem {
+  width: 80%;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #ececec;
+
+  cursor: pointer;
+}
+
+.TripItem .info-box {
+  width: 100%;
+  height: 30px;
+
+  font-size: 13px;
+  color: #a0a0a0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.TripItem .title-box {
+  width: 100%;
+  height: 50px;
+
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TripItem .title-box h4 {
+  font-size: 20px;
+}
+
+.TripItem .title-box p {
+  font-size: 15px;
+}
+
+.TripItem .tripcourse-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.TripCourseItemPreview {
+  width: 120px;
+
+  padding: 10px;
+  margin-right: 20px;
+
+  font-size: 12px;
+  text-align: center;
+  word-break: keep-all;
+  line-height: 1.5;
+
+  align-items: center;
+
+  background-color: #7fb7f7;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* TripDetail */
+
+.TripDetail .detail-box {
+  width: 80%;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  background-color: #ececec;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.TripDetail .detail-id {
+  font-size: 15px;
+  color: #acacac;
+}
+
+.TripDetail .detail-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.TripDetail .detail-date {
+  font-size: 15px;
+  color: #acacac;
+
+  text-align: right;
+}
+
+.TripDetail .detail-user {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.TripDetail .detail-content {
+  width: 80%;
+  min-height: 100px;
+
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.TripCourseDetail {
+  width: 50%;
+
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  align-items: center;
+
+  background-color: #7fb7f7;
+  border-radius: 10px;
+}
+
+/* TripNew */
+
+.TripNew .input-body {
+  width: 100%;
+  min-height: 200px;
+
+  margin-top: 20px;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+
+  /* border-bottom: 1px solid #ececec; */
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.TripNew .input-box {
+  width: 45%;
+  height: 300px;
+
+  margin-left: -20px;
+  padding-top: 20px;
+  padding-left: 40px;
+
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.TripNew .input-box h4 {
+  font-size: 40px;
+  font-weight: bold;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.TripNew .input-box p {
+  word-break: keep-all;
+  line-height: 1.5;
+
+  margin-bottom: 70px;
+}
+
+.TripNew .input-box input {
+  width: 60%;
+  height: 15px;
+
+  padding: 10px;
+  margin-right: 40px;
+  font-size: 15px;
+
+  border-radius: 5px;
+  border: 1px solid #acacac;
+}
+
+.TripNew .place-box {
+  width: 50%;
+
+  margin-right: -30px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.TripNew .place-box > h4 {
+  font-size: 40px;
+  font-weight: bold;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  line-height: 1.5;
+}
+
+.TripNew .button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.PlaceBox {
+  width: 80%;
+  height: 80px;
+
+  padding: 20px;
+  margin-bottom: 30px;
+
+  border-radius: 10px;
+  background-color: #ececec;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.PlaceBox div {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.PlaceBox div > h4 {
+  font-size: 25px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.PlaceBox > p {
+  color: #8c8c8c;
+}
+
+.PlaceBox .Button {
+  height: 35px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 12px;
+}
+
+.TripNew .result-body {
+  width: 100%;
+  min-height: 200px;
+
+  margin-top: 20px;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.TripNew .result-body .line {
+  width: 100%;
+
+  border-top: 1px solid #ececec;
+}
+
+.TripNew .result-body .result-box {
+  width: 100%;
+
+  padding-bottom: 50px;
+
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.result-body .title-box {
+  width: 80%;
+
+  margin-top: 60px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-body .title-box h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.TripNew .save-box {
+  width: 95%;
+
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.TripNew .content-box {
+  width: 320px;
+  height: 300px;
+
+  margin-left: 20px;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.TripNew .content-box h4 {
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+.TripNew .content-box input {
+  width: 280px;
+  height: 30px;
+
+  padding-left: 10px;
+
+  font-size: 15px;
+
+  border-radius: 5px;
+  border: 1px solid #acacac;
+}
+
+.TripNew .content-box textarea {
+  width: 280px;
+  min-height: 100px;
+
+  padding: 10px;
+
+  font-size: 15px;
+
+  border-radius: 5px;
+  border: 1px solid #acacac;
+}
+
+/* TripCoureItem */
+
+.TripCourseItem {
+  text-align: center;
+  line-height: 1.5;
+
+  align-items: center;
+
+  background-color: #7fb7f7;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  width: 500px;
+  height: 200px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  display: flex;
+  border-radius: 20px;
+}
+
+.TripCourseItem .time-box {
+  width: 35%;
+  height: 100%;
+}
+
+.TripCourseItem .time-box > div {
+  width: 90%;
+  height: 70px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 10px;
+  background-color: #325072;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.TripCourseItem .time-box > div p {
+  font-size: 14px;
+
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.TripCourseItem .doing-box {
+  width: 60%;
+  height: 150px;
+
+  margin-left: 30px;
+
+  border-radius: 10px;
+  background-color: #325072;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
