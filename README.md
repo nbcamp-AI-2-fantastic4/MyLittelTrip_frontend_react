@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# MyLittelTrip_fronted_react
+여행일정 추천받기 (frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 배포 도메인
+[https://mylittletrip-4416.web.app](https://mylittletrip-4416.web.app)
 
-## Available Scripts
+# 프로젝트 정보
+## 프로젝트 명
+MLT - My Little Trip (여행 일정 추천받기)
 
-In the project directory, you can run:
+## 기간
+2022.07.07-08.16
 
-### `npm start`
+## 팀 정보
+- 팀명 : 사사십육
+- 팀원 : 김동우, 김진수, 최민기, 박진우
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 역할 분담
+- 김동우	: 유저 기능 / 여행일정 추천 기능 	+ Front 구성
+- 김진수	: 여행장소 기능					+ server 배포
+- 박진우	: 댓글, 좋아요 기능				+ server 배포
+- 최민기	: 리뷰 기능						+ server 배포
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Base 추천알고리즘 github
+[Travel_recommedation](https://github.com/kimphysicsman/Travel_recommedation)
 
-### `npm test`
+## Backend github
+[MyLittleTrip_backend](https://github.com/nbcamp-AI-2-fantastic4/MyLittelTrip_backend/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 개요
+## 프로젝트 주제
+여행 일정 추천 서비스
 
-### `npm run build`
+## 주제선정 이유
+여행 일정을 직접 만들거나 여행 장소를 추천해주는 웹서비스는 이미 많이 존재 	ex) 트립어드바이저 같은 여행어플, 여기어때와 같은 숙박어플
+하지만 여행 일정 자체를 추천해주는 웹서비스는 ?
+바쁜 현대사회 → 간단하게 장소만 입력해서 여행일정 추천받기
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MVP
+사용자가 가고 싶은 여행장소를 선택하면 그 여행장소들을 포함된 간단한 여행일정을 추천해주자! 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Structure
+![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F03581bcb-1dd3-4f8e-b893-6cbab68b387a%2FUntitled.png?table=block&id=6654e8f6-0943-4ab2-bb24-825c7565e789&spaceId=18a55a3f-2515-4f20-9f7f-04187576573f&width=2000&userId=f65f0c54-5dc8-4f1b-acf4-e4d6d5c93a82&cache=v2)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 페이지 설계
+![image](https://user-images.githubusercontent.com/68724828/184800489-b926e293-a526-4cc5-89d3-621f6d1ec46c.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# API 설계
+[API 문서](https://www.notion.so/f69b765f4aad4ceaa9ef935332f2d10a)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 일정 & 진행상황
+[진행 상황](https://www.notion.so/956751e99e104674a69ea01f1f9488c9)
