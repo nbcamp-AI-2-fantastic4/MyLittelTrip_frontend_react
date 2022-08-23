@@ -1,53 +1,97 @@
-# MyLittelTrip_fronted_react
-여행일정 추천받기 (frontend)
+# 🛫 MyLittelTrip
 
-# 배포 도메인
-[https://mylittletrip-4416.web.app](https://mylittletrip-4416.web.app)
+여행일정 추천받기  
+https://mylittletrip-4416.web.app
 
-# 프로젝트 정보
-## 프로젝트 명
-MLT - My Little Trip (여행 일정 추천받기)
+<br />
 
-## 기간
-2022.07.07-08.16
+# 📃 프로젝트 정보
 
-## 팀 정보
-- 팀명 : 사사십육
-- 팀원 : 김동우, 김진수, 최민기, 박진우
+### 1. 제작기간
 
-## 역할 분담
-- 김동우	: 유저 기능 / 여행일정 추천 기능 	+ Front 구성
-- 김진수	: 여행장소 기능					+ server 배포
-- 박진우	: 댓글, 좋아요 기능				+ server 배포
-- 최민기	: 리뷰 기능						+ server 배포
+> 2022.07.07 ~ 09.02
 
-## Base 추천알고리즘 github
-[Travel_recommedation](https://github.com/kimphysicsman/Travel_recommedation)
+### 2. 참여 인원
 
-## Backend github
-[MyLittleTrip_backend](https://github.com/nbcamp-AI-2-fantastic4/MyLittelTrip_backend/)
+> |                    Name                    |  Position   |
+> | :----------------------------------------: | :---------: |
+> | [김동우](https://github.com/kimphysicsman) | Back, Front |
+> |   [김진수](https://github.com/creamone)    |    Back     |
+> |     [박진우](https://github.com/J1NU2)     |    Back     |
+> |    [최민기](https://github.com/mankic)     |    Back     |
 
-# 개요
-## 프로젝트 주제
-여행 일정 추천 서비스
+### 3. 역할 분담
 
-## 주제선정 이유
-여행 일정을 직접 만들거나 여행 장소를 추천해주는 웹서비스는 이미 많이 존재 	ex) 트립어드바이저 같은 여행어플, 여기어때와 같은 숙박어플
-하지만 여행 일정 자체를 추천해주는 웹서비스는 ?
-바쁜 현대사회 → 간단하게 장소만 입력해서 여행일정 추천받기
+> - 김동우 : 유저 기능 / 여행일정 추천 기능 + Front 구성
+> - 김진수 : 여행장소 기능 + server 배포
+> - 박진우 : 댓글, 좋아요 기능 + server 배포
+> - 최민기 : 리뷰 기능 + server 배포
 
-## MVP
-사용자가 가고 싶은 여행장소를 선택하면 그 여행장소들을 포함된 간단한 여행일정을 추천해주자! 
+<br />
 
-# Structure
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F03581bcb-1dd3-4f8e-b893-6cbab68b387a%2FUntitled.png?table=block&id=6654e8f6-0943-4ab2-bb24-825c7565e789&spaceId=18a55a3f-2515-4f20-9f7f-04187576573f&width=2000&userId=f65f0c54-5dc8-4f1b-acf4-e4d6d5c93a82&cache=v2)
+# 📚 기술 스택
 
-# 페이지 설계
-![image](https://user-images.githubusercontent.com/68724828/184800489-b926e293-a526-4cc5-89d3-621f6d1ec46c.png)
+### 1. Back-end
+
+> python3  
+> Django  
+> Django-rest-framwork
+
+### 2. Front-end
+
+> React.js  
+> Node.js
+
+<br />
+
+# 📊 페이지 설계 & Structure
+
+<details>
+<summary>페이지 설계</summary>
+<div markdown="1" style="padding-left: 15px;">
+<img src="https://user-images.githubusercontent.com/68724828/184800489-b926e293-a526-4cc5-89d3-621f6d1ec46c.png" width="800px"/>
+</div>
+</details>
+
+<br />
+
+<details>
+<summary>Structure</summary>
+<div markdown="1" style="padding-left: 15px;">
+<img src="https://user-images.githubusercontent.com/68724828/186079270-28793ba1-466e-421f-baf2-563b890c926f.png" />
+</div>
+</details>
+
+<br />
 
 
-# API 설계
-[API 문서](https://www.notion.so/f69b765f4aad4ceaa9ef935332f2d10a)
+# 📕 기타 자료
 
-# 일정 & 진행상황
-[진행 상황](https://www.notion.so/956751e99e104674a69ea01f1f9488c9)
+### 1. 기획문서
+
+> [MyLittleTrip - Notion](https://www.notion.so/kimphysicsman/MLT-My-Little-Trip-716433a2fc8940d9870bd83b63570646?v=0c42e849923d4449aade69046bf597d1)
+
+### 2. 여행추천 알고리즘
+
+> [Travel_recommedation - Github](https://github.com/kimphysicsman/Travel_recommedation)
+
+### 3. 발표영상
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <p> 1. 중간발표 </p>
+        <a href="https://www.youtube.com/watch?v=6B0DSjvsqj0&t=1s" title="MyLittleTrip 중간발표">
+          <img align="center" src="https://user-images.githubusercontent.com/68724828/186087151-e0f0ebed-08c1-4a99-9af0-a8c48c536205.png" width="300" >
+        </a>
+      </td>
+      <td>
+        <p> 2. 최종발표 </p>
+        <a href="https://youtu.be/9eoYpRqTZUU" title="MyLittleTrip 최종발표">
+          <img align="center" src="https://user-images.githubusercontent.com/68724828/186087151-e0f0ebed-08c1-4a99-9af0-a8c48c536205.png" width="300" >
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
